@@ -146,7 +146,7 @@ class _buildColorFilteredState extends State<buildColorFiltered> {
         child: ColorFiltered(
           colorFilter: ColorFilter.mode(Colors.purple, BlendMode.modulate),
           child: Image.asset(
-            'assets/images/logo.png',
+            'assets/images/logos.png',
             width: 100,
             height: 100,
           ),
@@ -647,6 +647,7 @@ class _buildAnimatedPaddingState extends State<buildAnimatedPadding> {
           child: Column(
         children: [
           AnimatedPadding(
+            curve: Curves.bounceOut,
             padding: _padding,
             duration: const Duration(seconds: 1),
             child: Container(

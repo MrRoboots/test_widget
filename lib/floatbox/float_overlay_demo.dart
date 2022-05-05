@@ -29,7 +29,7 @@ class _FloatOverLayDemoState extends State<FloatOverLayDemo> {
                 // return AppFloatBox();
                 var pixelDetails = MediaQuery.of(context).size;
                 return FloatingButton(
-                  imageProvider: AssetImage('assets/images/logo.png'),
+                  imageProvider: AssetImage('assets/images/logos.png'),
                   left: pixelDetails.width - 50,
                   top: pixelDetails.height - 80,
                 );

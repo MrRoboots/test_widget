@@ -109,9 +109,11 @@ packages:
   f_downloader:
     dependency: "direct main"
     description:
-      path: "D:\\FlutterTest\\f_downloader"
-      relative: false
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "32462c9ceaca773769488d81644065b3dd5e5ea1"
+      url: "https://github.com/MrRoboots/f_downloader.git"
+    source: git
     version: "0.0.1"
   fake_async:
     dependency: transitive
@@ -163,6 +165,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.1"
+  graphs:
+    dependency: transitive
+    description:
+      name: graphs
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.0"
   html:
     dependency: transitive
     description:
@@ -170,6 +179,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.15.0"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.13.4"
   http_parser:
     dependency: transitive
     description:
@@ -177,6 +193,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "4.0.0"
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.17.0"
   js:
     dependency: transitive
     description:
@@ -324,6 +347,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "6.0.2"
+  rive:
+    dependency: "direct main"
+    description:
+      name: rive
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.8.4"
   sky_engine:
     dependency: transitive
     description: flutter

@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             body: Stack(
               children: <Widget>[
                          FloatingButton(
-                  imageProvider: AssetImage('assets/images/logo.png'),
+                  imageProvider: AssetImage('assets/images/logos.png'),
                 )
               ],
             ))*/);
