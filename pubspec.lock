@@ -106,15 +106,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "4.0.1"
-  f_downloader:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "32462c9ceaca773769488d81644065b3dd5e5ea1"
-      url: "https://github.com/MrRoboots/f_downloader.git"
-    source: git
-    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -465,5 +456,5 @@ packages:
     source: hosted
     version: "0.2.0"
 sdks:
-  dart: ">=2.16.0 <3.0.0"
+  dart: ">=2.14.0 <3.0.0"
   flutter: ">=2.8.0"

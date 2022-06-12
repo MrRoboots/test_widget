@@ -1,3 +1,4 @@
+/*
 import 'dart:io';
 import 'dart:isolate';
 import 'dart:ui';
@@ -119,12 +120,14 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> _prepareSaveDir() async {
+*/
 /*    _localPath = (await _findLocalPath())!;
     final savedDir = Directory(_localPath);
     bool hasExisted = await savedDir.exists();
     if (!hasExisted) {
       savedDir.create();
-    }*/
+    }*//*
+
   }
 
   Future<bool> _checkPermission() async {
@@ -408,3 +411,4 @@ class DownloadItem extends StatelessWidget {
     }
   }
 }
+*/
