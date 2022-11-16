@@ -37,6 +37,9 @@ class _AnimIconBtnState extends State<AnimIconBtn>
 
     _circleAnimation =
         Tween(begin: 1.0, end: 0.0).animate(_animationController);
+    _circleAnimation.addListener(() {
+      print("circle value ${_circleAnimation.value}");
+    });
     super.initState();
   }
 
