@@ -5,7 +5,7 @@ import 'dart:typed_data';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
-import 'StreamDemo2.dart';
+import 'stream_demo2.dart';
 
 void main() {
   runApp(MyApp());

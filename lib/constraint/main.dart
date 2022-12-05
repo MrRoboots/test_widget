@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_stream/anim_icon_btn.dart';
-import 'package:test_stream/constraint/VoiceWidget.dart';
+import 'package:test_stream/anim/icon/anim_icon_btn.dart';
+import 'package:test_stream/constraint/voice_widget.dart';
 
 void main() {
   runApp(const MyApp());
