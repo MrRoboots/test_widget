@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: FloatOverLayDemo(),
-   /*     home: new Scaffold(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: FloatOverLayDemo(),
+      /*     home: new Scaffold(
             appBar: new AppBar(title: Text('Flutter Demo')),
             body: Stack(
               children: <Widget>[
@@ -26,6 +26,9 @@ class MyApp extends StatelessWidget {
                   imageProvider: AssetImage('assets/images/logos.png'),
                 )
               ],
-            ))*/);
+            ))*/
+    );
   }
+
+
 }

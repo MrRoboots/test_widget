@@ -12,24 +12,47 @@ class FloatOverLayDemo extends StatefulWidget {
 class _FloatOverLayDemoState extends State<FloatOverLayDemo> {
   static OverlayEntry entry;
 
+  jump() {
+    Navigator.of(context).push(PageRouteBuilder(
+        opaque: false,
+        pageBuilder: (context, Animation<double> animation, Animation<double> secondaryAnimation) {
+          return Scaffold(
+              backgroundColor: Colors.transparent,
+              body: Center(
+                  child: InkWell(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Hero(
+                  tag: 'hero',
+                  child: FadeTransition(
+                    opacity: animation,
+                    child: const FlutterLogo(
+                      size: 100,
+                    ),
+                  ),
+                ),
+              )));
+        }));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("OverlayEntryDemo"),
+        title: const Text("OverlayEntryDemo"),
       ),
       body: Column(
         children: <Widget>[
           RaisedButton(
-            child: Text("add"),
+            child: const Text("add"),
             onPressed: () {
               entry?.remove();
               entry = null;
               entry = OverlayEntry(builder: (context) {
-                // return AppFloatBox();
                 var pixelDetails = MediaQuery.of(context).size;
                 return FloatingButton(
-                  imageProvider: AssetImage('assets/images/logos.png'),
+                  imageProvider: const AssetImage('assets/images/logos.png'),
                   left: pixelDetails.width - 50,
                   top: pixelDetails.height - 80,
                 );
@@ -38,12 +61,29 @@ class _FloatOverLayDemoState extends State<FloatOverLayDemo> {
             },
           ),
           RaisedButton(
-            child: Text("delete"),
+            child: const Text("delete"),
             onPressed: () {
               entry?.remove();
               entry = null;
             },
           ),
+          /*  MaterialButton(
+            child: const Hero(
+              tag: 'hero',
+              child: FlutterLogo(size: 100),
+            ),
+            onPressed: () {
+              jump();
+            },
+          ),*/
+
+          GestureDetector(
+            onTap: () => jump(),
+            child: const Hero(
+              tag: 'hero',
+              child: FlutterLogo(size: 100),
+            ),
+          )
         ],
       ),
     );
