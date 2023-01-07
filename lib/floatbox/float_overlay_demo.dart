@@ -44,7 +44,7 @@ class _FloatOverLayDemoState extends State<FloatOverLayDemo> {
       ),
       body: Column(
         children: <Widget>[
-          RaisedButton(
+          MaterialButton(
             child: const Text("add"),
             onPressed: () {
               entry?.remove();
@@ -60,7 +60,7 @@ class _FloatOverLayDemoState extends State<FloatOverLayDemo> {
               Overlay.of(context).insert(entry);
             },
           ),
-          RaisedButton(
+          MaterialButton(
             child: const Text("delete"),
             onPressed: () {
               entry?.remove();

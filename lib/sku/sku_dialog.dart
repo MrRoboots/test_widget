@@ -85,7 +85,7 @@ class _RadioButton extends StatelessWidget {
     bool isSelect = radio.radioName == group.selectedValue;
     return Container(
       margin: EdgeInsets.only(top: 8),
-      child: FlatButton(
+      child: MaterialButton(
         child: Text(radio.radioName, style: TextStyle(fontSize: 12)),
         onPressed: radio.isDisabled
             ? null

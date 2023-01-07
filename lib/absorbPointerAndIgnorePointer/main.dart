@@ -441,7 +441,7 @@ class _buildAnimatedSwitcherState extends State<buildAnimatedSwitcher> {
                   );
                 },
               ),
-              RaisedButton(
+              MaterialButton(
                 child: Text("切换"),
                 onPressed: () {
                   setState(() {
@@ -488,7 +488,7 @@ class _buildAnimatedSizeState extends State<buildAnimatedSize>
               color: _color,
             ),
           ),
-          RaisedButton(
+          MaterialButton(
             child: Text('AnimatedSize'),
             onPressed: () {
               setState(() {
@@ -528,7 +528,7 @@ class _buildAnimatedPositionedDirectionalState
           child: Container(color: Colors.red),
           duration: Duration(seconds: 2),
         ),
-        RaisedButton(
+        MaterialButton(
           child: Text('start'),
           onPressed: () {
             setState(() {
@@ -568,7 +568,7 @@ class _buildAnimatedPositionedState extends State<buildAnimatedPositioned> {
         ),
         Positioned(
           top: _top,
-          child: RaisedButton(
+          child: MaterialButton(
             child: Text('click'),
             onPressed: () {
               setState(() {
@@ -656,7 +656,7 @@ class _buildAnimatedPaddingState extends State<buildAnimatedPadding> {
               color: Colors.red,
             ),
           ),
-          RaisedButton(
+          MaterialButton(
             child: Text('AnimatedPadding'),
             onPressed: () {
               setState(() {
