@@ -6,11 +6,13 @@ import 'package:test_stream/widget/flutter_star/star.dart';
 import 'package:test_stream/widget/flutter_star/star_score.dart';
 import 'package:test_stream/widget/wrapper/wrapper.dart';
 
+import 'simple.dart';
 import 'tip_box.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
+  // runApp(MaterialApp(home: Sample()));
 }
 
 class MyApp extends StatelessWidget {
@@ -34,6 +36,9 @@ class MyApp extends StatelessWidget {
             buildStarScore(),
             buildStack(),
             buildHeaderContainer(),
+            buildOverFlowBox(),
+            const SizedBox(height: 100),
+            buildSizeOverFlowBox(),
           ],
         ),
       ),
@@ -114,6 +119,48 @@ class MyApp extends StatelessWidget {
       // transform: Matrix4.translationValues(150, 0, 0), //平移
       alignment: Alignment.center,
       child: const TipBox(),
+    );
+  }
+
+  // OverFlowBox组件，可以做一些卡片重叠的效果
+  buildOverFlowBox() {
+    return Container(
+      color: Colors.green,
+      height: 100,
+      width: 200,
+      padding: const EdgeInsets.only(left: 16, right: 16, top: 56),
+      // 溢出容器
+      child: OverflowBox(
+        // 对齐方式
+        alignment: Alignment.topCenter,
+        maxHeight: 100,
+        maxWidth: 180,
+        child: Container(
+          color: Colors.blue,
+          height: 100,
+          width: 180,
+        ),
+      ),
+    );
+  }
+
+  buildSizeOverFlowBox() {
+    return Container(
+      color: Colors.green,
+      height: 100,
+      width: 200,
+      padding: const EdgeInsets.only(left: 16, right: 16, top: 56),
+      // 溢出容器
+      child: SizedOverflowBox(
+        // 对齐方式
+        alignment: Alignment.topCenter,
+        size: const Size(180, 200),
+        child: Container(
+          color: Colors.blue,
+          height: 100,
+          width: 180,
+        ),
+      ),
     );
   }
 }
